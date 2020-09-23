@@ -1,0 +1,41 @@
+---
+title: "cle-budget_internal-service-fund"
+output: html_document
+---
+```{r}
+library(tidyverse)
+library(treemap)
+library(janitor)
+```
+
+#Making the treemap for Benefits
+```{r}
+
+column_benefits <- c("telephone_exchange", "sinking_fund_general_operation", "office_of_radio_communication", "motor_vehicle_maintenance", "printing_and_reproduction", "cca_income_tax_administration")
+row_benefits <-c(40680,399550,176865,1729012,246355,1723518)
+
+treemap_benefits <- data.frame(column_benefits, row_benefits)
+
+treemap(treemap_benefits,
+        index="column_benefits",
+        vSize="row_benefits",
+            type="index",
+            palette = "Set2"
+          )    
+```
+
+#Making a treemap for Capital Outlay
+```{r}
+
+column_capital_outlay <- c("office_of_radio_communication")
+row_capital_outlay <-c(274263)
+
+treemap_capital_outlay <- data.frame(column_capital_outlay, row_capital_outlay)
+
+treemap(treemap_capital_outlay,
+        index="column_capital_outlay",
+        vSize="row_capital_outlay",
+            type="index",
+            palette = "Set2"
+          )    
+```
