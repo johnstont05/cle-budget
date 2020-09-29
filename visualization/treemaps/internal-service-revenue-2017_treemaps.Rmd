@@ -1,0 +1,240 @@
+---
+title: "Internal Service Revenue 2017 - Treemaps"
+author: Taylor Johnston
+output: 
+  flexdashboard::flex_dashboard:
+    vertical_layout: scroll
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(highcharter)
+```
+
+### Benefits Treemap
+
+```{r}
+column_benefits <- c("sinking_fund_general_operation", "telephone_exchange", "office_of_radio_communication", "motor_vehicle_maintenance", "printing_and_reproduction","cca_income_tax_administration")
+
+row_benefits <- c(40680, 399550, 176865, 1729012, 246355, 1723518)
+
+benefits_df <- data.frame(column_benefits, row_benefits)
+
+treemap_benefits <- benefits_df %>%
+  hchart(
+    "treemap", 
+    hcaes(x = column_benefits, value = row_benefits, color = row_benefits)
+    ) %>%
+    hc_colorAxis(stops = color_stops(colors = viridis::inferno(10)))
+
+treemap_benefits
+```
+
+### Capital Outlay Treemap
+
+```{r}
+column_capital_outlay <- c("office_of_radio_communication")
+
+row_capital_outlay <- c(274263)
+
+capital_outlay_df <- data.frame(column_capital_outlay, row_capital_outlay)
+
+treemap_capital_outlay <- capital_outlay_df %>%
+  hchart(
+    "treemap", 
+    hcaes(x = column_capital_outlay, value = row_capital_outlay, color = row_capital_outlay)
+    ) %>%
+    hc_colorAxis(stops = color_stops(colors = viridis::inferno(10)))
+  
+treemap_capital_outlay
+```
+
+### Charges from Print Reproduction Treemap
+
+```{r}
+column_charges_from_print_reprod <- c("health_insurance_fund")
+
+row_charges_from_print_reprod <- c(3605)
+
+charges_from_print_reprod_df <- data.frame(column_charges_from_print_reprod, row_charges_from_print_reprod)
+
+treemap_charges_from_print_reprod <- charges_from_print_reprod_df %>%
+  hchart(
+    "treemap", 
+    hcaes(x = column_charges_from_print_reprod, value = row_charges_from_print_reprod, color = row_charges_from_print_reprod)
+    ) %>%
+    hc_colorAxis(stops = color_stops(colors = viridis::inferno(10)))
+  
+treemap_charges_from_print_reprod
+```
+
+### Claims, Refunds, Maintenance Treemap
+
+```{r}
+column_claims_refunds_maintenance <- c("health_insurance_fund", "prescription_self_insurance_fund", "cca_income_tax")
+
+row_claims_refunds_maintenance <- c(68437196,	13621819,	508313)
+
+claims_refunds_maintenance_df <- data.frame(column_claims_refunds_maintenance, row_claims_refunds_maintenance)
+
+treemap_claims_refunds_maintenance <- claims_refunds_maintenance_df %>%
+  hchart(
+    "treemap", 
+    hcaes(x = column_claims_refunds_maintenance, value = row_claims_refunds_maintenance, color = row_claims_refunds_maintenance)
+    ) %>%
+    hc_colorAxis(stops = color_stops(colors = viridis::inferno(10)))
+  
+treemap_claims_refunds_maintenance
+```
+
+### Contractual Services Treemap
+
+```{r}
+column_contractual_services <- c("sinking_fund_general_operation",	"telephone_exchange",	"office_of_radio_communication",	"motor_vehicle_maintenance",	"printing_and_reproduction",	"health_insurance_fund",	"cca_income_tax_administration")
+
+row_contractual_services <- c(505670,	42665,	314564,	155035,	605863,	6000462,	1605687)
+
+contractual_services_df <- data.frame(column_contractual_services, row_contractual_services)
+
+treemap_contractual_services <- contractual_services_df %>%
+  hchart(
+    "treemap", 
+    hcaes(x = column_contractual_services, value = row_contractual_services, color = row_contractual_services)
+    ) %>%
+    hc_colorAxis(stops = color_stops(colors = viridis::inferno(10)))
+  
+treemap_contractual_services
+```
+
+### Interdepart Services Charges Treemap
+
+```{r}
+column_interdepart_services <- c("office_of_radio_communication",	"motor_vehicle_interdepart",	"printing_and_reproduction",	"cca_income_tax_administration")
+
+row_interdepart_services <- c(9441,	124480, 7856,	693587)
+
+interdepart_services_df <- data.frame(column_interdepart_services, row_interdepart_services)
+
+treemap_interdepart_services <- interdepart_services_df %>%
+  hchart(
+    "treemap", 
+    hcaes(x = column_interdepart_services, value = row_interdepart_services, color = row_interdepart_services)
+    ) %>%
+    hc_colorAxis(stops = color_stops(colors = viridis::inferno(10)))
+  
+treemap_interdepart_services
+```
+
+### Maintenance Treemap
+
+```{r}
+column_maintenance <- c("telephone_exchange",	"office_of_radio_communication",	"motor_vehicle_maintenance",	"printing_and_reproduction",	"cca_income_tax_administration")
+
+row_maintenance <- c(105426,	1560049,	1110434,	105761,	139458)
+
+maintenance_df <- data.frame(column_maintenance, row_maintenance)
+
+treemap_maintenance <- maintenance_df %>%
+  hchart(
+    "treemap", 
+    hcaes(x = column_maintenance, value = row_maintenance, color = row_maintenance)
+    ) %>%
+    hc_colorAxis(stops = color_stops(colors = viridis::inferno(10)))
+  
+treemap_maintenance
+```
+
+### Materials and Supplies Treemap
+
+```{r}
+column_materials_and_supplies <- c('sinking_fund_general_operation',	'telephone_exchange',	'office_of_radio_communication',	'motor_vehicle_maintenance',	'printing_and_reproduction',	'cca_income_tax_administration')
+
+row_materials_and_supplies <- c(89, 906,	321359,	9153973,	536899,	609978)
+
+materials_and_supplies_df <- data.frame(column_materials_and_supplies, row_materials_and_supplies)
+
+treemap_materials_and_supplies <- materials_and_supplies_df %>%
+  hchart(
+    "treemap", 
+    hcaes(x = column_materials_and_supplies, value = row_materials_and_supplies, color = row_materials_and_supplies)
+    ) %>%
+    hc_colorAxis(stops = color_stops(colors = viridis::inferno(10)))
+  
+treemap_materials_and_supplies
+```
+
+### Other Training and Professional Dues Treemap
+
+```{r}
+column_other_training_and_professional_dues <- c("sinking_fund_general_operation",	"office_of_radio_communication",	"motor_vehicle_maintenance", "printing_and_reproduction",	"cca_income_tax_administration")
+
+row_other_training_and_professional_dues <- c(261, 11588,	4794,	4908,	2024)
+
+other_training_and_professional_dues_df <- data.frame(column_other_training_and_professional_dues, row_other_training_and_professional_dues)
+
+treemap_other_training_and_professional_dues <- other_training_and_professional_dues_df %>%
+  hchart(
+    "treemap", 
+    hcaes(x = column_other_training_and_professional_dues, value = row_other_training_and_professional_dues, color = row_other_training_and_professional_dues)
+    ) %>%
+    hc_colorAxis(stops = color_stops(colors = viridis::inferno(10)))
+  
+treemap_other_training_and_professional_dues
+```
+### Revenue Treemap
+
+```{r}
+column_revenue <- c('sinking_fund_general_operation',	'telephone_exchange',	'office_of_radio_communication',	'motor_vehicle_revenue',	'printing_and_reproduction',	'health_insurance_fund',	'prescription_self_insurance_fund',	'cca_income_tax_administration')
+
+row_revenue <- c(693858, 7219718,	3539221,	18512465,	2372123,	79775356,	14616979,	9654345)
+
+revenue_df <- data.frame(column_revenue, row_revenue)
+
+treemap_revenue <- revenue_df %>%
+  hchart(
+    "treemap", 
+    hcaes(x = column_revenue, value = row_revenue, color = row_revenue)
+    ) %>%
+    hc_colorAxis(stops = color_stops(colors = viridis::inferno(10)))
+  
+treemap_revenue
+```
+
+### Salaries and Wages Treemap
+
+```{r}
+column_salaries <- c("sinking_fund_general_operation",	"telephone_exchange",	"office_of_radio_communication",	"motor_vehicle_maintenance",	"printing_and_reproduction",	"cca_income_tax_administration")
+
+row_salaries <- c(155833,	980718,	392782,	3812213,	606396,	4655742)
+
+salaries_df <- data.frame(column_salaries, row_salaries)
+
+treemap_salaries <- salaries_df %>%
+  hchart(
+    "treemap", 
+    hcaes(x = column_salaries, value = row_salaries, color = row_salaries)
+    ) %>%
+    hc_colorAxis(stops = color_stops(colors = viridis::inferno(10)))
+  
+treemap_salaries
+```
+
+### Utilities Treemap
+
+```{r}
+column_utilities <- c("telephone_exchange",	"office_of_radio_communication",	"motor_vehicle_maintenance",	"printing_and_reproduction",	"cca_income_tax_administration")
+
+row_utilities <- c(5771221,	165591,	104467,	37334,	182857)
+
+utilities_df <- data.frame(column_utilities, row_utilities)
+
+treemap_utilities <- utilities_df %>%
+  hchart(
+    "treemap", 
+    hcaes(x = column_utilities, value = row_utilities, color = row_utilities)
+    ) %>%
+    hc_colorAxis(stops = color_stops(colors = viridis::inferno(10)))
+  
+treemap_utilities
+```
