@@ -1,0 +1,32 @@
+---
+title: "General Fund 2017 Bar Charts"
+author: Taylor Johnston
+output: 
+  flexdashboard::flex_dashboard:
+    vertical_layout: scroll
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+
+### Chart A
+
+```{r}
+
+```
+
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+
