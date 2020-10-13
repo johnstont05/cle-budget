@@ -1,0 +1,161 @@
+---
+title: "Internal Service Revenue 2017 - Treemaps"
+author: Taylor Johnston
+output: 
+  flexdashboard::flex_dashboard:
+    vertical_layout: scroll
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(ggplot2)
+library(reshape2)
+```
+
+### Benefits Treemap
+
+```{r}
+benefits <- c("sinking_fund_general_operation", "telephone_exchange", "office_of_radio_communication", "motor_vehicle_maintenance", "printing_and_reproduction","cca_income_tax_administration")
+
+
+benefits_2017 <- c(40680, 38949, 40885, 42223, 399550, 322424)
+
+benefits_2018 <- c(328570, 419828, 176865, 192901, 183235, 225100)
+
+benefits_2019 <- c(1729012, 1724134, 1900460, 2003144, 246355, 315383)
+
+benefits_2020 <- c(269672, 296031, 1723518, 1769185, 1835517, 2331563)
+
+benefits_df <- data.frame(benefits, benefits_2017, benefits_2018, benefits_2019, benefits_2020)
+
+benefits_df_reshape <- melt(benefits_df,id.vars = "benefits")
+
+
+benefits_barchart <- ggplot(benefits_df_reshape, aes(x = benefits, y = value,fill=variable)) +
+    geom_bar(stat='identity')
+
+benefits_barchart + coord_flip()
+
+```
+
+### Capital Outlay Treemap
+
+```{r}
+
+capital_outlay <- c("office_of_radio_communication")
+
+capital_outlay_2017 <- c(274263)
+
+capital_outlay_2018 <- c(455756)
+
+capital_outlay_2019 <- c(214408)
+
+capital_outlay_2020 <- c(600000)
+
+capital_outlay_df <- data.frame(capital_outlay, capital_outlay_2017, capital_outlay_2018, capital_outlay_2019, capital_outlay_2020)
+
+capital_outlay_df_reshape <- melt(capital_outlay_df,id.vars = "capital_outlay")
+
+capital_outlay_barchart <- ggplot(capital_outlay_df_reshape, aes(x = capital_outlay, y = value,fill=variable)) +
+    geom_bar(stat='identity')
+
+capital_outlay_barchart + coord_flip()
+
+```
+
+### Charges from Print Reproduction Treemap
+
+```{r}
+charges_from_print_reprod <- c("health_insurance_fund")
+
+charges_from_print_reprod_2017 <- c(3605)
+
+charges_from_print_reprod_2018 <- c(9151)
+
+charges_from_print_reprod_2019 <- c(200)
+
+charges_from_print_reprod_2020 <- c(10000)
+
+charges_from_print_reprod_df <- data.frame(charges_from_print_reprod, charges_from_print_reprod_2017, charges_from_print_reprod_2018, charges_from_print_reprod_2019, charges_from_print_reprod_2020)
+
+charges_from_print_reprod_df_reshape <- melt(charges_from_print_reprod_df,id.vars = "charges_from_print_reprod")
+
+
+charges_from_print_reprod_barchart <- ggplot(charges_from_print_reprod_df_reshape, aes(x = charges_from_print_reprod, y = value,fill=variable)) +
+    geom_bar(stat='identity')
+
+charges_from_print_reprod_barchart + coord_flip()
+```
+
+### Claims, Refunds, Maintenance Treemap
+
+```{r}
+claims_refunds_maintenance <- c("health_insurance_fund", "prescription_self_insurance_fund", "cca_income_tax_administration")
+
+claims_refunds_maintenance_2017 <- c(68437196, 74034972, 75932758)
+
+claims_refunds_maintenance_2018 <- c(84635944, 13621819, 13839493)
+
+claims_refunds_maintenance_2019 <- c(14706319, 18468560, 508313)
+
+claims_refunds_maintenance_2020 <- c(541890, 606698, 599230)
+
+claims_refunds_maintenance_df <- data.frame(claims_refunds_maintenance, claims_refunds_maintenance_2017, claims_refunds_maintenance_2018, claims_refunds_maintenance_2019, claims_refunds_maintenance_2020)
+
+claims_refunds_maintenance_df_reshape <- melt(claims_refunds_maintenance_df,id.vars = "claims_refunds_maintenance")
+
+
+claims_refunds_maintenance_barchart <- ggplot(claims_refunds_maintenance_df_reshape, aes(x = claims_refunds_maintenance, y = value,fill=variable)) +
+    geom_bar(stat='identity')
+
+claims_refunds_maintenance_barchart + coord_flip()
+
+```
+
+### Contractual Services Treemap
+
+```{r}
+
+```
+
+### Interdepart Services Charges Treemap
+
+```{r}
+
+```
+
+### Maintenance Treemap
+
+```{r}
+
+```
+
+### Materials and Supplies Treemap
+
+```{r}
+
+```
+
+### Other Training and Professional Dues Treemap
+
+```{r}
+
+```
+### Revenue Treemap
+
+```{r}
+
+```
+
+### Salaries and Wages Treemap
+
+```{r}
+
+```
+
+### Utilities Treemap
+
+```{r}
+
+```
