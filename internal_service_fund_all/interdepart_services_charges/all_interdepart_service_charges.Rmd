@@ -1,5 +1,5 @@
 ---
-title: "all_interdepart_service_charges_2017"
+title: "all_interdepart_service_charges"
 author: "Taylor"
 date: "9/22/2020"
 output: html_document
@@ -24,37 +24,52 @@ df_07_prescription_self_insurance_fund = read_csv('/Users/taylorjohnston/Desktop
 df_08_CCA_income_tax = read_csv('/Users/taylorjohnston/Desktop/data_viz_cle/cle-budget/InternalServiceFund/08_CCAIncomeTaxAdmin_pg493-95.csv')
 ```
 
-#Get the 2017 Values for the Interdepart Service Charges section
+#Get the values for the Interdepart Service Charges section
 ```{r}
-ISF_radio_comm_interdepart_service_charges_2017 <- df_03_radio_comm[50:53, 1:2]
-ISF_motor_vehicle_mtn_interdepart_service_charges_2017 <- df_04_motor_vehicle_mtn[87:93, 1:2]
-ISF_printing_reprod_interdepart_service_charges_2017 <- df_05_printing_reprod[59:62, 1:2]
-ISF_CCA_income_tax_interdepart_service_charges_2017 <- df_08_CCA_income_tax[66:70, 1:2]
+ISF_radio_comm_interdepart_service_charges_2017 <- df_03_radio_comm[50:53, 1:5]
+ISF_motor_vehicle_mtn_interdepart_service_charges_2017 <- df_04_motor_vehicle_mtn[87:93, 1:5]
+ISF_printing_reprod_interdepart_service_charges_2017 <- df_05_printing_reprod[59:62, 1:5]
+ISF_CCA_income_tax_interdepart_service_charges_2017 <- df_08_CCA_income_tax[66:70, 1:5]
 ```
 
 #Merge all the offices into one dataframe
 
 ```{r}
-all_interdepart_service_charges_2017 <- Reduce(function(r_x,r_y) merge(x=r_x, y=r_y, by=1, all=TRUE),  
+all_interdepart_service_charges <- Reduce(function(r_x,r_y) merge(x=r_x, y=r_y, by=1, all=TRUE),  
   list(ISF_radio_comm_interdepart_service_charges_2017, ISF_motor_vehicle_mtn_interdepart_service_charges_2017, ISF_printing_reprod_interdepart_service_charges_2017, ISF_CCA_income_tax_interdepart_service_charges_2017))
 ```
 
 #Rename first column
 ```{r}
-names(all_interdepart_service_charges_2017)[1] <- 'interdepart_service_charges_2017'
-names(all_interdepart_service_charges_2017)[2] <- 'Office of Radio Communication'
-names(all_interdepart_service_charges_2017)[3] <- 'Motor Vehicle interdepart'
-names(all_interdepart_service_charges_2017)[4] <- 'Printing and Reproduction'
-names(all_interdepart_service_charges_2017)[5] <- 'CCA Income Tax Administration'
-all_interdepart_service_charges_2017[9,1] <- "Total" #renaming row to "total"
+names(all_interdepart_service_charges)[1] <- 'interdepart_service_charges'
+names(all_interdepart_service_charges)[2] <- 'Office of Radio Communication 2017'
+names(all_interdepart_service_charges)[3] <- 'Motor Vehicle interdepart 2017'
+names(all_interdepart_service_charges)[4] <- 'Printing and Reproduction 2017'
+names(all_interdepart_service_charges)[5] <- 'CCA Income Tax Administration 2017'
 
-all_interdepart_service_charges_2017 <- clean_names(all_interdepart_service_charges_2017) #cleans the column names
+names(all_interdepart_service_charges)[6] <- 'Office of Radio Communication 2018'
+names(all_interdepart_service_charges)[7] <- 'Motor Vehicle interdepart 2018'
+names(all_interdepart_service_charges)[8] <- 'Printing and Reproduction 2018'
+names(all_interdepart_service_charges)[9] <- 'CCA Income Tax Administration 2018'
+
+names(all_interdepart_service_charges)[10] <- 'Office of Radio Communication 2019'
+names(all_interdepart_service_charges)[11] <- 'Motor Vehicle interdepart 2019'
+names(all_interdepart_service_charges)[12] <- 'Printing and Reproduction 2019'
+names(all_interdepart_service_charges)[13] <- 'CCA Income Tax Administration 2019'
+
+names(all_interdepart_service_charges)[14] <- 'Office of Radio Communication 2020'
+names(all_interdepart_service_charges)[15] <- 'Motor Vehicle interdepart 2020'
+names(all_interdepart_service_charges)[16] <- 'Printing and Reproduction 2020'
+names(all_interdepart_service_charges)[17] <- 'CCA Income Tax Administration 2020'
+all_interdepart_service_charges[9,1] <- "Total" #renaming row to "total"
+
+all_interdepart_service_charges <- clean_names(all_interdepart_service_charges) #cleans the column names
 
 ```
 
 #Create file
 ```{r}
-write.csv(all_interdepart_service_charges_2017,"all_interdepart_service_charges_2017.csv")
+write.csv(all_interdepart_service_charges,"all_interdepart_service_charges.csv")
 ```
 
 ```
