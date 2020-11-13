@@ -1,5 +1,4 @@
 library("tidyverse")
-library("data.table")
 library("dplyr")
 
 #Salaries 2-14
@@ -28,7 +27,7 @@ library("dplyr")
 
 
 # Read all the files in the General Fund Folder and name the dataframe the name of the csv file
-setwd("./Desktop/data_viz_cle/GeneralFund/")
+setwd("./Desktop/code/cle-budget/GeneralFund/")
 getwd()
 file_names <- list.files(pattern="*.csv")
 df_list <- lapply(setNames(file_names, make.names(gsub("*.csv", "", file_names))), 
