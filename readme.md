@@ -8,7 +8,7 @@
 
 ## Important Files
 Each fund has it's own folder, with a script for that fund. Here are the script names for reading the fund data by department. 
-- Debt Service Fund: DebtServiceFund_ReadCSV.R (to confirm)
+- Debt Service Fund: DebtServiceFund_ReadCSV.R
 - General Fund: GeneralFund_ReadCSV.R
 - Internal Service Fund: ??
 - Majory Enterprise Fund: **
