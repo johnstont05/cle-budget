@@ -12,6 +12,6 @@ Each fund has it's own folder, with a script for that fund. Here are the script 
 - General Fund: GeneralFund_ReadCSV.R
 - Internal Service Fund: ??
 - Majory Enterprise Fund: **
-- Small Enterprise Fund: SmallEnterpriseFund_ReadCSV.R (to confirm)
-- Special Revenue Fund: SpecialRevenueFund_ReadCSV.R (to confirm)
+- Small Enterprise Fund: SmallEnterpriseFund_ReadCSV.R (missing some sections)
+- Special Revenue Fund: SpecialRevenueFund_ReadCSV.R (missing some sections)
 
