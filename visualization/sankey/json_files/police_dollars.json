@@ -1,0 +1,106 @@
+{
+"police_2019":[
+{"node":0,"name":"revenue1_income_tax"},
+{"node":1,"name":"revenue2_interest_income"},
+{"node":2,"name":"revenue3_charges_for_services"},
+{"node":3,"name":"revenue4_fines,forfeitures_&_settlements"},
+{"node":4,"name":"revenue5_licenses_&_permits"},
+{"node":5,"name":"revenue6_misc"},
+{"node":6,"name":"revenue7_shared_revenue"},
+  {"node":61,"name":"revenue7_shared_revenue_property_tax_state_subsidy"},
+  {"node":62,"name":"revenue7_shared_revenue_cigarette_&_liquor_tax"},
+  {"node":63,"name":"revenue7_shared_revenue_estate_tax"},
+  {"node":64,"name":"revenue7_shared_revenue_casino"},
+  {"node":65,"name":"revenue7_shared_revenue_other"},
+{"node":7,"name":"revenue8_property_tax"},
+{"node":8,"name":"revenue9_sale_of_city_assests"},
+{"node":9,"name":"revenue10_transfers_in"},
+{"node":10,"name":"revenue11_local_government_fund"},
+{"node":11,"name":"revenue12_other_taxes"},
+  {"node":111,"name":"revenue12_other_taxes_admission_tax"},
+  {"node":112,"name":"revenue12_other_taxes_motor_license_tax"},
+  {"node":113,"name":"revenue12_other_taxes_parking_tax"},
+  {"node":114,"name":"revenue12_other_taxes_electric_excise_tax"},
+  {"node":115,"name":"revenue12_other_taxes_hotel_tax"},
+  {"node":116,"name":"revenue12_other_taxes_other"},
+{"node":12,"name":"revenue13_grant_revenue"},
+
+{"node":13,"name":"general_fund"},
+
+{"node":14,"name":"department_public_saftey"},
+{"node":15,"name":"department_police"},
+{"node":16,"name":"department_other"},
+
+{"node":17,"name":"salaries"},
+{"node":18,"name":"benefits"},
+{"node":19,"name":"training_&_professional_service_dues"},
+{"node":20,"name":"utilities"},
+{"node":21,"name":"contractual_services"},
+{"node":22,"name":"materials_&_supplies"},
+{"node":23,"name":"maintenance"},
+{"node":24,"name":"interdepart_service_charges"},
+{"node":25,"name":"expenditure_recovery"},
+
+{"node":26,"name":"department_public_saftey_revenue"},
+{"node":27,"name":"department_police_revenue"}
+
+],
+"links":[
+{"source":0,"target":13,"value":441,753,856},
+{"source":1,"target":13,"value":5,495,262},
+{"source":2,"target":13,"value":38,600,845},
+{"source":3,"target":13,"value":11,015,522},
+{"source":4,"target":13,"value":19,518,635},
+{"source":5,"target":13,"value":42,382,264},
+
+{"source":61,"target":1,"value":3,191,438},
+{"source":62,"target":1,"value":816,964},
+{"source":63,"target":1,"value":12,779},
+{"source":64,"target":1,"value":9,416,043},
+{"source":65,"target":1,"value":3,360},
+{"source":6,"target":13,"value":13,440,585},
+
+{"source":7,"target":13,"value":37,905,311},
+{"source":8,"target":13,"value":0},
+{"source":9,"target":13,"value":3,731,113},
+{"source":10,"target":13,"value":26,072,779},
+
+{"source":111,"target":11,"value":28.939,818},
+{"source":112,"target":11,"value":3,504,426},
+{"source":113,"target":11,"value":15,348,019},
+{"source":114,"target":11,"value":0},
+{"source":115,"target":11,"value":7,006,596},
+{"source":116,"target":11,"value":24,374},
+{"source":11,"target":13,"value":44,823,233},
+
+{"source":12,"target":13,"value":912,538},
+
+{"source":13,"target":14,"value":5,884,768},
+{"source":13,"target":15,"value":206,566,800},
+{"source":13,"target":16,"value":0},
+
+{"source":14,"target":17,"value":2,671,641},
+{"source":14,"target":18,"value":958,322},
+{"source":14,"target":19,"value":8,867},
+{"source":14,"target":20,"value":76,709},
+{"source":14,"target":21,"value":218,087},
+{"source":14,"target":22,"value":15,820},
+{"source":14,"target":23,"value":1,531,830},
+{"source":14,"target":24,"value":403,491},
+{"source":14,"target":25,"value":0},
+
+{"source":26,"target":14,"value":50,009},
+
+{"source":15,"target":17,"value":138,512,093},
+{"source":15,"target":18,"value":56,124,866},
+{"source":15,"target":19,"value":53,183},
+{"source":15,"target":20,"value":1,473,485},
+{"source":15,"target":21,"value":1,435,392},
+{"source":15,"target":22,"value":681,019},
+{"source":15,"target":23,"value":1,353,322},
+{"source":15,"target":24,"value":150,000},
+{"source":15,"target":25,"value":6,783,441},
+
+{"source":27,"target":15,"value":14,992,523}
+
+]}
