@@ -14,6 +14,9 @@
 {"node":11,"name":"revenue12_other_taxes"},
 {"node":12,"name":"revenue13_grant_revenue"},
 {"node":13,"name":"general_fund"},
+{"node":14,"name":"department_public_saftey"},
+{"node":15,"name":"department_police"},
+{"node":16,"name":"department_other"},
 {"node":17,"name":"salaries"},
 {"node":18,"name":"benefits"},
 {"node":19,"name":"training_&_professional_service_dues"},
@@ -31,5 +34,12 @@
   {"source":3,"target":13,"value":11015522},
   {"source":4,"target":13,"value":19518635},
   {"source":5,"target":13,"value":42382264},
-  {"source":7,"target":13,"value":37905311}
+  {"source":6,"target":13,"value":13440585},
+  {"source":7,"target":13,"value":37905311},
+  {"source":8,"target":13,"value":0},
+  {"source":9,"target":13,"value":3731113},
+  {"source":10,"target":13,"value":26072779},
+  {"source":11,"target":13,"value":44823233},
+  {"source":12,"target":13,"value":912538},
+  {"source":15,"target":17,"value":138512093}
   ]}
