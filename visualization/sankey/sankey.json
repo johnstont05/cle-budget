@@ -13,7 +13,16 @@
 {"node":10,"name":"revenue11_local_government_fund"},
 {"node":11,"name":"revenue12_other_taxes"},
 {"node":12,"name":"revenue13_grant_revenue"},
-{"node":13,"name":"general_fund"}
+{"node":13,"name":"general_fund"},
+{"node":17,"name":"salaries"},
+{"node":18,"name":"benefits"},
+{"node":19,"name":"training_&_professional_service_dues"},
+{"node":20,"name":"utilities"},
+{"node":21,"name":"contractual_services"},
+{"node":22,"name":"materials_&_supplies"},
+{"node":23,"name":"maintenance"},
+{"node":24,"name":"interdepart_service_charges"},
+{"node":25,"name":"expenditure_recovery"}
 ],
 "links":[
   {"source":0,"target":13,"value":441753856},
@@ -23,4 +32,4 @@
   {"source":4,"target":13,"value":19518635},
   {"source":5,"target":13,"value":42382264},
   {"source":7,"target":13,"value":37905311}
-]}
+  ]}
