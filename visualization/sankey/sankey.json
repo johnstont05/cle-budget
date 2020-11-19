@@ -25,7 +25,12 @@
 {"node":22,"name":"materials_&_supplies"},
 {"node":23,"name":"maintenance"},
 {"node":24,"name":"interdepart_service_charges"},
-{"node":25,"name":"expenditure_recovery"}
+{"node":25,"name":"expenditure_recovery"},
+{"node":26,"name":"revenue7_shared_revenue_property_tax_state_subsidy"},
+{"node":27,"name":"revenue7_shared_revenue_cigarette_&_liquor_tax"},
+{"node":28,"name":"revenue7_shared_revenue_estate_tax"},
+{"node":29,"name":"revenue7_shared_revenue_casino"},
+{"node":30,"name":"revenue7_shared_revenue_other"}
 ],
 "links":[
   {"source":0,"target":13,"value":441753856},
@@ -41,5 +46,11 @@
   {"source":10,"target":13,"value":26072779},
   {"source":11,"target":13,"value":44823233},
   {"source":12,"target":13,"value":912538},
-  {"source":15,"target":17,"value":138512093}
+  {"source":13,"target":15,"value":206566800},
+  {"source":15,"target":17,"value":138512093},
+  {"source":26,"target":1,"value":3191438},
+  {"source":27,"target":1,"value":816964},
+  {"source":28,"target":1,"value":12779},
+  {"source":29,"target":1,"value":9416043},
+  {"source":30,"target":1,"value":3360}
   ]}
