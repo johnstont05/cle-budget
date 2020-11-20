@@ -28,7 +28,7 @@
 </style>
 <body>
 
-<script src="src="https://d3js.org/d3.v3.min.js></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="sankey.js"></script>
 <script>
 
@@ -36,8 +36,8 @@ var units = "Widgets";
 
 // set the dimensions and margins of the graph
 var margin = {top: 10, right: 10, bottom: 10, left: 10},
-    width = 954 - margin.left - margin.right,
-    height = 900 - margin.top - margin.bottom;
+    width = 1050 - margin.left - margin.right,
+    height = 1000 - margin.top - margin.bottom;
 
 // format variables
 var formatNumber = d3.format(",.0f"),    // zero decimal places
@@ -61,7 +61,7 @@ var sankey = d3.sankey()
 var path = sankey.link();
 
 // load the data
- var data = d3.json("sankey.json", function(error, data) { 
+d3.json("sankey.json", function(error, graph) {
 
   sankey
       .nodes(graph.nodes)
