@@ -28,7 +28,7 @@
 </style>
 <body>
 
-<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="src="https://d3js.org/d3.v3.min.js></script>
 <script src="sankey.js"></script>
 <script>
 
@@ -61,7 +61,7 @@ var sankey = d3.sankey()
 var path = sankey.link();
 
 // load the data
-d3.json("sankey.json", function(error, graph) {
+ var data = d3.json("sankey.json", function(error, data) { 
 
   sankey
       .nodes(graph.nodes)
