@@ -1,0 +1,41 @@
+<html>
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+      $.getJSON('police.json',function(data){
+          $('#category').append('How does Cleveland spend $ on '+ data.category+'?');
+          $('#fund').append('Cleveland has 8 funds, but most spending for '+
+          data.category+' comes from the '+data.funds+'. \n ' +data.fund_description);
+          $('#percent').append(data.category+' expenses make up '+data.percent+
+          '% of the '+data.funds+'.');
+
+      }).error(function(){
+          console.log('error');
+      });
+    });
+</script>
+</head>
+<body>
+  <h1 id="category"></h1>
+  <div>
+    <h2> Where does the $ come from?</h2>
+    <p id="fund"></p>
+    <p id="percent"></p>
+  </div>
+  <div>
+    <h2> Where does the $ go?</h2>
+    <p><Put sankey diagram here</p>
+  </div>
+  <div>
+    <h2> How has spending changed over time?</h2>
+    <!-- dropdown of all category options to compare total spending time -->
+  </div>
+  <div>
+    <h2> The vision</h2>
+    <!-- dropdown of all category options to compare total spending time -->
+  </div>
+
+
+</body>
+</html>
