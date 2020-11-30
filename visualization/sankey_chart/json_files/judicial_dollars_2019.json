@@ -27,20 +27,23 @@
   {"node":23,"name":"Grant revenue"},
 
   {"node":24,"name":"General fund"},
-  {"node":25,"name":"Department of Public Saftey"},
+  {"node":25,"name":"Judicial Branch"},
+  {"node":26,"name":"Department: Other"},
 
-  {"node":26,"name":"Public Saftey Administration"},
-  {"node":27,"name":"Division of Police"},
-  {"node":28,"name":"Division of Fire"},
-  {"node":29,"name":"Division of Correction"},
-  {"node":30,"name":"Civilian Police Review Board"},
-  {"node":31,"name":"Community Police Commision"},
-  {"node":32,"name":"Police Inspector General"},
-  {"node":33,"name":"Department of Justice"},
-  {"node":34,"name":"Divisions: Other - EMS, Animal Control, 911"},
+  {"node":27,"name":"Municipal Court"},
+  {"node":28,"name":"Clerk of Courts"},
+  {"node":29,"name":"Housing Court"},
 
-  {"node":35,"name":"Police Pension"},
-  {"node":36,"name":"Fire Pension"}
+  {"node":30,"name":"Salaries"},
+  {"node":31,"name":"Benefits"},
+  {"node":32,"name":"Training & professional service dues"},
+  {"node":33,"name":"Car Washes"},
+  {"node":34,"name":"Contractual services"},
+  {"node":35,"name":"Materials & supplies"},
+  {"node":36,"name":"Maintenance"},
+  {"node":37,"name":"Interdepart service charges"},
+  {"node":38,"name":"Claim, Refunds, Maintenance"}
+
 
 ],
 "links":[
@@ -71,19 +74,36 @@
   {"source":22,"target":24,"value":3731113},
   {"source":23,"target":24,"value":26072779},
 
-  {"source":24,"target":25,"value":377288542},
+  {"source":24,"target":25,"value":38734381},
+  {"source":24,"target":26,"value":646999662},
 
-  {"source":25,"target":26,"value":5884768},
-  {"source":25,"target":27,"value":206566800},
-  {"source":25,"target":28,"value":99613125},
-  {"source":25,"target":29,"value":5199792},
-  {"source":25,"target":30,"value":156450},
-  {"source":25,"target":31,"value":393198},
-  {"source":25,"target":32,"value":44837},
-  {"source":25,"target":33,"value":3130455},
-  {"source":25,"target":34,"value":32808184},
+  {"source":25,"target":27,"value":22532563},
+  {"source":25,"target":28,"value":11705770},
+  {"source":25,"target":29,"value":4496881},
 
-  {"source":24,"target":35,"value":1503060},
-  {"source":24,"target":36,"value":1503060}
+  {"source":27,"target":30,"value":13609755},
+  {"source":27,"target":31,"value":5083472},
+  {"source":27,"target":32,"value":47064},
+  {"source":27,"target":34,"value":3580005},
+  {"source":27,"target":35,"value":35531},
+  {"source":27,"target":33,"value":543},
+  {"source":27,"target":37,"value":176193},
+
+  {"source":28,"target":30,"value":6923994},
+  {"source":28,"target":31,"value":3002879},
+  {"source":28,"target":32,"value":2546},
+  {"source":28,"target":34,"value":1226525},
+  {"source":28,"target":35,"value":340432},
+  {"source":28,"target":36,"value":21669},
+  {"source":28,"target":38,"value":1150},
+  {"source":28,"target":37,"value":186575},
+
+  {"source":29,"target":30,"value":3069727},
+  {"source":29,"target":31,"value":1110943},
+  {"source":29,"target":32,"value":35173},
+  {"source":29,"target":34,"value":84793},
+  {"source":29,"target":35,"value":26346},
+  {"source":29,"target":33,"value":420},
+  {"source":29,"target":37,"value":168645}
 
   ]}

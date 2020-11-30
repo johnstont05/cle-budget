@@ -39,8 +39,18 @@
   {"node":33,"name":"Department of Justice"},
   {"node":34,"name":"Divisions: Other - EMS, Animal Control, 911"},
 
-  {"node":35,"name":"Police Pension"},
-  {"node":36,"name":"Fire Pension"}
+  {"node":35,"name":"Salaries"},
+  {"node":36,"name":"Benefits"},
+  {"node":37,"name":"Training & professional service dues"},
+  {"node":38,"name":"Utilities"},
+  {"node":39,"name":"Contractual services"},
+  {"node":40,"name":"Materials & supplies"},
+  {"node":41,"name":"Maintenance"},
+  {"node":42,"name":"Interdepart service charges"},
+  {"node":43,"name":"Expenditure recovery"},
+
+  {"node":44,"name":"Police Pension"},
+  {"node":45,"name":"Fire Pension"}
 
 ],
 "links":[
@@ -83,7 +93,29 @@
   {"source":25,"target":33,"value":3130455},
   {"source":25,"target":34,"value":32808184},
 
-  {"source":24,"target":35,"value":1503060},
-  {"source":24,"target":36,"value":1503060}
+  {"source":24,"target":27,"value":1503060},
+  {"source":24,"target":28,"value":1503060},
+  {"source":24,"target":44,"value":1503060},
+  {"source":24,"target":45,"value":1503060},
+
+  {"source":26,"target":35,"value":2671641},
+  {"source":26,"target":36,"value":958322},
+  {"source":26,"target":37,"value":8867},
+  {"source":26,"target":38,"value":76709},
+  {"source":26,"target":39,"value":218087},
+  {"source":26,"target":40,"value":15820},
+  {"source":26,"target":41,"value":1531830},
+  {"source":26,"target":42,"value":403491},
+  {"source":26,"target":43,"value":0},
+
+  {"source":27,"target":35,"value":138512093},
+  {"source":27,"target":36,"value":56124866},
+  {"source":27,"target":37,"value":53183},
+  {"source":27,"target":38,"value":1473485},
+  {"source":27,"target":39,"value":1435392},
+  {"source":27,"target":40,"value":681019},
+  {"source":27,"target":41,"value":1353322},
+  {"source":27,"target":42,"value":150000},
+  {"source":27,"target":43,"value":6783441}
 
   ]}
