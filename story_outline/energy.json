@@ -1,0 +1,10 @@
+{
+  "category": "Water & Energy Infrastructure",
+  "funds": "Major Enterprise Fund",
+  "fund_description": "The Major Enterprise Fund pays for the city's public utilities specifically covering:<ul><li>Water</li><li>Sewer</li></li>Electricity (Cleveland Public Power)</li><li>Airport</li></ul></br>Unlike the General Fund, this services in this fund are mostly paid for by user fees, such as when you pay your energy bill. </br></br>In times when user fees aren't enough to cover all expenses, some money is transferred from the General Fund.",
+  "percent":"XX",
+  "sankey_json":"police_sankey.html",
+  "spending_over_time":"up",
+  "vision": "Utilities Moratorium, Cleveland Climate Action plan",
+  "spending":"Unlike Police, spending on Energy is influenced not by taxes, but by the number of people getting their energy from Cleveland Public Power.</br>"
+}
