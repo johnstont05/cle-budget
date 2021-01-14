@@ -1,59 +1,23 @@
-<!-- Dec 10 Thoughts
-- Energy & Water should be together. Sankey should include spending on expanding infrastructure
-- Energy json does not work
--->
-
+<!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <title>d3.chart.sankey (product demo)</title>
-  <script src="//d3js.org/d3.v3.min.js"></script>
-  <script src="//cdn.rawgit.com/newrelic-forks/d3-plugins-sankey/master/sankey.js"></script>
-  <script src="//cdn.rawgit.com/misoproject/d3.chart/master/d3.chart.min.js"></script>
-  <script src="//cdn.rawgit.com/q-m/d3.chart.sankey/master/d3.chart.sankey.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-  <script type="text/javascript">
-      var buttonFunction = function(event){
+  <title>Visualizing the Cleveland Budget</title>
+  <meta name="description" content="Website description goes here" />
+  <meta name="keywords" content="Keywords go here" />
+  <meta name="twitter:image:src" content="#" />
+  <meta property="og:image" content="#" />
 
-        switch (event) {
-          case 'police':
-            var json_file ="police.json";
-            break;
-          case 'judge':
-            var json_file ="judges.json";
-            break;
-          case 'energy':
-            var json_file ="energy.json";
-            break;
-          case 'road':
-            var json_file ="road.json";
-            break;
-          default:
-            var json_file = 'energy.json';
+<!-- Bootstrap -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
 
-        }
+  <!-- CSS -->
+<link rel="stylesheet" href="css/styles.css">
 
-        $.getJSON(json_file, function(data){
-          document.getElementById("category").innerHTML = data.category;
-          document.getElementById("category1").innerHTML = data.category;
-          document.getElementById("category2").innerHTML = data.category;
-          document.getElementById("fund1").innerHTML = data.funds;
-          document.getElementById("fund2").innerHTML = data.funds;
-          document.getElementById("fund_description").innerHTML = data.fund_description;
-          document.getElementById("percent").innerHTML = data.percent;
-          document.getElementById("spending").innerHTML = data.spending;
-          document.getElementById("vision").innerHTML = data.vision;
-          $(function(){$("#sankey").load(data.sankey_json);});
 
-        }).error(function(){
-            console.log('error');
-        });
-
-      }
-
-      window.onload = buttonFunction;
-  </script>
 </head>
 <body>
   <div>
@@ -75,18 +39,59 @@
     <h2> Where does the money go?</h2>
     <p><span id="spending"></span></p>
     <div id="sankey"></div>
-    <ui
-  </div>
-  <div>
-    <h2> Want to see more detailed spending of each department?</h2>
-    <!-- dropdown of all category options to compare total spending time -->
+    <ui </div> <div>
+      <h2> Want to see more detailed spending of each department?</h2>
+      <!-- dropdown of all category options to compare total spending time -->
   </div>
   <div>
     <h2>How will spending be different in 2021</h2>
     <p><span id="vision"></span></p>
 
   </div>
-
-
+  <!-- D3.js -->
+  <script src="//d3js.org/d3.v3.min.js"></script>
+  <script src="//cdn.rawgit.com/newrelic-forks/d3-plugins-sankey/master/sankey.js"></script>
+  <script src="//cdn.rawgit.com/misoproject/d3.chart/master/d3.chart.min.js"></script>
+  <script src="//cdn.rawgit.com/q-m/d3.chart.sankey/master/d3.chart.sankey.min.js"></script>
+  <!-- JavaScript -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+  <script type="text/javascript">
+    var buttonFunction = function(event) {
+      switch (event) {
+        case 'police':
+          var json_file = "police.json";
+          break;
+        case 'judge':
+          var json_file = "judges.json";
+          break;
+        case 'energy':
+          var json_file = "energy.json";
+          break;
+        case 'road':
+          var json_file = "road.json";
+          break;
+        default:
+          var json_file = 'police.json';
+      }
+      $.getJSON(json_file, function(data) {
+        document.getElementById("category").innerHTML = data.category;
+        document.getElementById("category1").innerHTML = data.category;
+        document.getElementById("category2").innerHTML = data.category;
+        document.getElementById("fund1").innerHTML = data.funds;
+        document.getElementById("fund2").innerHTML = data.funds;
+        document.getElementById("fund_description").innerHTML = data.fund_description;
+        document.getElementById("percent").innerHTML = data.percent;
+        document.getElementById("spending").innerHTML = data.spending;
+        document.getElementById("vision").innerHTML = data.vision;
+        $(function() {
+          $("#sankey").load(data.sankey_json);
+        });
+      }).error(function() {
+        console.log('error');
+      });
+    }
+    window.onload = buttonFunction;
+  </script>
 </body>
+
 </html>
