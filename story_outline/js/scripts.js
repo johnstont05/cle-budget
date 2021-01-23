@@ -13,7 +13,7 @@ var buttonFunction = function(event) {
       var json_file = "road.json";
       break;
     default:
-      var json_file = 'police.json';
+      var json_file = 'energy.json';
   }
   $.getJSON(json_file, function(data) {
     document.getElementById("category").innerHTML = data.category;
@@ -25,11 +25,35 @@ var buttonFunction = function(event) {
     document.getElementById("percent").innerHTML = data.percent;
     document.getElementById("spending").innerHTML = data.spending;
     document.getElementById("vision").innerHTML = data.vision;
-    $(function() {
-      $("#sankey").load(data.sankey_json);
-    });
+
+    // TODO: Uncomment this code and let the sankey's load individually
+    // $(function() {
+    //   document.getElementById("sankey-energy").style.display = "hidden";
+    //   document.getElementById("sankey-police").style.visibility = "hidden";
+    //   document.getElementById("sankey-roads").style.visibility = "hidden";
+    //   document.getElementById("sankey-judicial").style.visibility = "hidden";
+    //
+    //   if(data.sankey_json == "sankey-police.html"){
+    //     document.getElementById("sankey-police").style.visibility = "visible";
+    //   }else if(data.sankey_json == "sankey-energy.html"){
+    //     document.getElementById("sankey-energy").style.visibility = "visible";
+    //   }else if(data.sankey_json == "sankey-roads.html"){
+    //     document.getElementById("sankey-roads").style.visibility = "visible";
+    //   }else if(data.sankey_json == "sankey-judicial.html"){
+    //     document.getElementById("sankey-judicial").style.visibility = "visible";
+    //   }
+    // });
   }).error(function() {
     console.log('error');
   });
 }
-window.onload = buttonFunction;
+
+var load_sankey = function(event){
+  $("#sankey-energy").load("sankey-energy.html");
+  $("#sankey-judicial").load("sankey-judicial.html");
+  $("#sankey-roads").load("sankey-roads.html");
+  $("#sankey-police").load("sankey-police.html");
+  buttonFunction();
+}
+
+window.onload = load_sankey;

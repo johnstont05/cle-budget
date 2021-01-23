@@ -2,8 +2,9 @@
   "category": "Judges",
   "funds": "General Fund",
   "fund_description": "This fund is mostly responsible for the general operating expenses for the city of Cleveland. This fund cover expenses for 11 Departments, plus the Cleveland Judicial System, the Mayor’s Office and Cleveland City Council. Those 11 departments cover a breadth of areas including Police, Fire, Emergency Responders, Waste Collection, Recreation, Health Center, Housing, Courts, City Council and the Mayor’s office. The General Fund gets its money from many sources, but most of it (66%) comes from income taxes.",
+  "spending"
   "percent":"XX",
-  "sankey_json_file_name":"police.json",
+  "sankey_json":"sankey-judicial.html",
   "spending_over_time":"up",
-  "vision": "defun the police"
+  "vision": "defund the police"
 }

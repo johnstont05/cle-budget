@@ -3,7 +3,7 @@
   "funds": "Small Enterprise Fund and the Special Revenue Fund",
   "fund_description": "There are two funds that spend money on roads. </br></br> <b>The Small Enterprise Fund</b> </br>The first is the Small Enterprise Fund which pays for the public spaces aka- enterprises. The Small Enterprise Fund specifically covers:<ul><li>Cemetaries</li><li>West Side Market</li></li>East Side Market</li><li>Public Auditorium</li><li>Golf Courses</li><li>Parking Facilities</li></ul></br>Unlike the General Fund, this services in this fund are mostly paid for by user fees, such as when you pay for public parking. In times when user fees aren't enough to cover all expenses, some money is transferred from the General Fund.</br></br><b>Special Revenue Fund</b></br>This fund is a bit tricky to understand, because the Special Revenue Fund is a restricted fund. This means the money that goes into the fund is restricted on what it can be spent on. </br></br>In this case, spending from the Special Revenue fund is restricted to capital improvements and debt. Capital improvements is a fancy way of saying any improvements done to city property. To be specific, this fund is used to:<ul><li>fix streets</li><li>pay for Cleveland Stadium</li><li>some school activities</li><li>rainy day reserve</li></ul>",
   "percent":"XX",
-  "sankey_json":"road_sankey.html",
+  "sankey_json":"sankey-roads.html",
   "spending_over_time":"up",
   "vision": "Bike Lanes",
   "spending":"....</br>"
