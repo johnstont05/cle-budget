@@ -18,11 +18,11 @@ var buttonFunction = function(event) {
   $.getJSON(json_file, function(data) {
     document.getElementById("category").innerHTML = data.category;
     document.getElementById("category1").innerHTML = data.category;
-    document.getElementById("category2").innerHTML = data.category;
+    // document.getElementById("category2").innerHTML = data.category;
     document.getElementById("fund1").innerHTML = data.funds;
-    document.getElementById("fund2").innerHTML = data.funds;
+    // document.getElementById("fund2").innerHTML = data.funds;
     document.getElementById("fund_description").innerHTML = data.fund_description;
-    document.getElementById("percent").innerHTML = data.percent;
+    // document.getElementById("percent").innerHTML = data.percent;
     document.getElementById("spending").innerHTML = data.spending;
     document.getElementById("vision").innerHTML = data.vision;
 
