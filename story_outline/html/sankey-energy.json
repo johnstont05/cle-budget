@@ -1,141 +1,150 @@
 {
   "nodes" : [
      {
-        "name" : "Major Enterprise Fund",
-        "id" : "animals"
+        "name" : "Major Enterprise Fund : $113,390,509",
+        "id" : "animals",
+        "number": 0
      },
      {
-        "name" : "Department of Public Utilities",
-        "id" : "health"
+        "name" : "Dept. of Public Utilities : ~$587,005,377",
+        "id" : "environment",
+        "number": 1
      },
      {
-        "name" : "Department of Port Control",
-        "id" : "social"
+        "name" : "Dept. of Port Control : ~$165,398,900",
+        "id" : "social",
+        "number": 2
      },
      {
-        "name" : "Utilities Administration",
-        "id" : "social"
+        "name" : "Water : $330,916,318",
+        "id" : "environment",
+        "number": 3
      },
      {
-        "name" : "Fiscal Control",
-        "id" : "social"
+        "name" : "Cleveland Public Power : $206,037,051",
+        "id" : "environment",
+        "number": 4
      },
      {
-        "name" : "Water",
-        "id" : "social"
+        "name" : "Water Pollution Control : $29,232,917",
+        "id" : "environment",
+        "number": 5
      },
      {
-        "name" : "Water Pollution Control",
-        "id" : "social"
+        "name" : "Fiscal Control : $7,300,586",
+        "id" : "environment",
+        "number": 6
      },
      {
-        "name" : "Cleveland Public Power",
-        "id" : "fallback"
+        "name" : "Utilities Admin : $6,488,211",
+        "id" : "environment",
+        "number": 7
      },
      {
-        "name" : "Revenue: Utilities Administration",
-        "id" : "fallback"
+        "name" : "Fee - Water : $330,939,381",
+        "id" : "environment",
+        "number": 8
      },
      {
-        "name" : "Revenue: Fiscal Control",
-        "id" : "fallback"
+        "name" : "Fee - Cleveland Public Power : $209,564,532",
+        "id" : "environment",
+        "number": 9
      },
      {
-        "name" : "Revenue: Water",
-        "id" : "fallback"
+        "name" : "Fee - Water Pollution Control : $32,699,000",
+        "id" : "environment",
+        "number": 10
      },
      {
-        "name" : "Revenue: Water Pollution Control",
-        "id" : "fallback"
+        "name" : "Fee - Fiscal Control : $7,232,424",
+        "id" : "environment",
+        "number": 11
      },
      {
-        "name" : "Revenue: Cleveland Public Power",
-        "id" : "environment"
+        "name" : "Fee - Utilities Admin : $6,570,040",
+        "id" : "environment",
+        "number": 12
      },
      {
         "id" : "social",
-        "name" : "Airport General Operations"
+        "name" : "Airport : $165,421,443",
+        "number": 13
      },
      {
-        "name" : "Revenue: Airport",
-        "id" : "social"
+        "name" : "Fee - Airport : $165,398,867",
+        "id" : "social",
+        "number": 14
      }
   ],
   "links" : [
      {
-        "source" : 0,
-        "value" : 10000000,
-        "target" : 1
-     },
-     {
-        "source" : 0,
-        "value" : 10000000,
-        "target" : 2
-     },
-     {
         "source" : 8,
-        "value" : 6570040,
-        "target" : 0
-     },
-     {
-        "source" : 9,
-        "value" : 7232424,
-        "target" : 0
-     },
-     {
-        "source" : 10,
         "value" : 330939281,
         "target" : 0
      },
      {
-        "source" : 11,
-        "value" : 32699000,
-        "target" : 0
-     },
-     {
-        "source" : 12,
+        "source" : 9,
         "value" : 209564526,
         "target" : 0
      },
      {
-        "source" : 7,
-        "value" : 19518635,
-        "target" : 12
+        "source" : 10,
+        "value" : 32699000,
+        "target" : 0
      },
      {
-        "source" : 1,
-        "value" : 6488211,
-        "target" : 3
+        "source" : 11,
+        "value" : 7232424,
+        "target" : 0
      },
      {
-        "source" : 1,
-        "value" : 7300586,
-        "target" : 4
+        "source" : 12,
+        "value" : 6570040,
+        "target" : 0
      },
      {
-        "source" : 1,
-        "value" : 330916319,
-        "target" : 5
-     },
-     {
-        "source" : 1,
-        "value" : 29323917,
-        "target" : 6
-     },
-     {
-        "source" : 7,
-        "value" : 29323917,
+        "source" : 0,
+        "value" : 587005377,
         "target" : 1
-     },
-     {
-       "source": 12,
-       "target": 2,
-       "value": 165421443
      },
      {
         "source" : 0,
         "value" : 165398867,
-        "target" : 13
+        "target" : 2
+     },
+     {
+       "source": 2,
+       "target": 13,
+       "value": 165421443
+     },
+     {
+        "source" : 14,
+        "value" : 165398867,
+        "target" : 0
+     },
+     {
+        "source" : 1,
+        "value" : 330916319,
+        "target" : 3
+     },
+     {
+        "source" : 1,
+        "value" : 206037051,
+        "target" : 4
+     },{
+        "source" : 1,
+        "value" : 29323917,
+        "target" : 5
+     },
+     {
+        "source" : 1,
+        "value" : 7300586,
+        "target" : 6
+     },
+     {
+        "source" : 1,
+        "value" : 6488211,
+        "target" : 7
      }
   ]
 }
