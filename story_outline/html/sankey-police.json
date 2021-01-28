@@ -62,7 +62,7 @@
      },
      {
         "name" : "Property tax : $37,905,311",
-        "id" : "fallback",
+        "id" : "environment",
         "number":12
      },
       {
@@ -87,27 +87,27 @@
          "notes":"Sum of EMS, Animal Control,Prof Standards: 16,594,478 + 2,850,934 + 1,436,960 "
       },
       {
-         "name" : "Division of Correction : $5,199,792",
+         "name" : "Public Safety Administration : $5,884,768",
          "id" : "social",
          "number":17
       },
       {
-         "name" : "Department of Justice : $3,130,455",
+         "name" : "Division of Correction : $5,199,792",
          "id" : "social",
          "number":18
       },
       {
-         "name" : "Community Police Commision: $393,198",
+         "name" : "Department of Justice : $3,130,455",
          "id" : "social",
          "number":19
       },
       {
-         "name" : "Civilian Police Review Board : $156,450",
+         "name" : "Community Police Commision: $393,198",
          "id" : "social",
          "number":20
       },
       {
-         "name" : "Public Safety Administration : $50,009",
+         "name" : "Civilian Police Review Board : $156,450",
          "id" : "social",
          "number":21
       },
@@ -210,27 +210,27 @@
       },
       {
          "source" : 13,
-         "value" : 5199792,
+         "value" : 5884768,
          "target" : 17
       },
       {
          "source" : 13,
-         "value" : 3130455,
+         "value" : 5199792,
          "target" : 18
       },
       {
          "source" : 13,
-         "value" : 393198,
+         "value" : 3130455,
          "target" : 19
       },
       {
          "source" : 13,
-         "value" : 156450,
+         "value" : 393198,
          "target" : 20
       },
       {
          "source" : 13,
-         "value" : 44837,
+         "value" : 156450,
          "target" : 21
       },
       {
